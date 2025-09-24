@@ -1,0 +1,145 @@
+/* =========================
+   General Styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+/* =========================
+   Header & Navigation
+========================= */
+.site-header {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.site-header .brand h1 {
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+}
+
+.site-header .tagline {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.main-nav {
+  margin-top: 10px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: #ffcc00;
+}
+
+/* =========================
+   Sections
+========================= */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* =========================
+   Profile Page
+========================= */
+.profile section {
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px 0;
+  background: #222;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #444;
+}
+
+#savedBio {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  min-height: 40px;
+}
+
+/* =========================
+   Gallery
+========================= */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  border-color: #ffcc00;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
