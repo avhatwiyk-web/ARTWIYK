@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Profile - Around the World in Your Kitchen</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <a href="index.html">← Back to Home</a>
+    <h1>My Profile</h1>
+  </header>
+
+  <!-- Profile Page Content -->
+  <main class="profile">
+    <!-- Biography Section -->
+    <section class="bio">
+      <h2>About Me</h2>
+      <textarea id="bioText" rows="6" placeholder="Write your biography here..."></textarea>
+      <button onclick="saveBio()">Save Biography</button>
+      <div id="savedBio"></div>
+    </section>
+
+    <!-- Image Uploads Section -->
+    <section class="uploads">
+      <h2>My Gallery</h2>
+      <input type="file" id="imageUpload" multiple />
+      <button onclick="uploadImages()">Upload Images</button>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <!-- Customization Section -->
+    <section class="design">
+      <h2>Customize My Design</h2>
+      <label>
+        Background Color:
+        <input type="color" id="bgColorPicker" onchange="changeBg()" />
+      </label>
+      <label>
+        Text Color:
+        <input type="color" id="textColorPicker" onchange="changeTextColor()" />
+      </label>
+    </section>
+  </main>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>
